@@ -21,4 +21,3 @@ if(WIN32)
 else()
     list(APPEND EXT_LIBS z)
 endif()
-
