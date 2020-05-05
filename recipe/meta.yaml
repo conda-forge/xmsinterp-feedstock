@@ -33,11 +33,10 @@ requirements:
     - numpy
 
 test:
-  source_files:
-    - _package/*.py
-    - _package/**/*.py
+  requires:
+    - pip
   commands:
-    - python -m unittest discover -v -p *_pyt.py -s ./_package/tests
+    - pip check
   imports:
     - xms.interp
 
