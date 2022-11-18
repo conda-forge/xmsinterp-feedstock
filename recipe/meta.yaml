@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: xmsinterp
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmsinterp/archive/{{ version }}.tar.gz
-  sha256: e8705b6b44e2cd121fed93417072bf5d4ae51615a61148cc0f824d242f6df603
+  sha256: e069f4a40dad32d5d45ebdb0be60c22b12ae658fff73033a888523afa7f32504
 
 build:
   number: 0
-  skip: True  # [py27]
+  skip: true  # [py27]
   merge_build_host: true
 
 requirements:
@@ -45,7 +45,7 @@ about:
   home: aquaveo.com
   license: BSD-2-Clause
   license_file: LICENSE
-  summary: "Interpolation library for XMS libraries and products"
+  summary: Interpolation library for XMS libraries and products
   doc_url: https://aquaveo.github.io/xmsinterp
   dev_url: https://github.com/Aquaveo/xmsinterp
 
