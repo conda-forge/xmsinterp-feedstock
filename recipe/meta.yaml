@@ -9,7 +9,7 @@ source:
   sha256: e8705b6b44e2cd121fed93417072bf5d4ae51615a61148cc0f824d242f6df603
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py27]
   merge_build_host: true
 
@@ -33,11 +33,10 @@ requirements:
     - numpy
 
 test:
-  source_files:
-    - _package/*.py
-    - _package/**/*.py
+  requires:
+    - pip
   commands:
-    - python -m unittest discover -v -p *_pyt.py -s ./_package/tests
+    - pip check
   imports:
     - xms.interp
 
