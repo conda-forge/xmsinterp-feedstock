@@ -1,0 +1,15 @@
+--- CMakeLists.txt.old	2019-11-29 11:55:32.356746499 +0100
++++ CMakeLists.txt	2019-11-29 11:58:14.178145633 +0100
+@@ -49,7 +49,7 @@
+     if(IS_CONDA_BUILD)
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Targets.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/FindPythonLibsNew.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Config.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11ConfigVersion.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Tools.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Targets.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/FindPythonLibsNew.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Config.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11ConfigVersion.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Tools.cmake")
+ 
