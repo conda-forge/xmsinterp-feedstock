@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: xmsinterp
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmsinterp/archive/{{ version }}.tar.gz
-  sha256: e8705b6b44e2cd121fed93417072bf5d4ae51615a61148cc0f824d242f6df603
+  sha256: b8666a0cb6b93ef804acd308372aa4dbfd592b3d3f0a0695604114e2ab994f49
 
 build:
   number: 0
